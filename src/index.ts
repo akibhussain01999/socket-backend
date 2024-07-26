@@ -26,7 +26,7 @@ app.post('/data', (req: Request, res: Response) => {
 const io = new Server(httpServer, {
   path: "/admin-panel",
   cors: {
-    origin: "http://localhost:3000",
+    origin: "socket-frontend-production.up.railway.app",
     methods: ["GET", "POST"],
   },
   // pingTimeout: 60000, // Uncomment if needed
