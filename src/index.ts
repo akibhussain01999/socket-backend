@@ -27,7 +27,7 @@ const io = new Server(httpServer, {
   path: "/admin-panel",
    transports: ['websocket', 'polling'],
   cors: {
-    origin: "socket-frontend-production.up.railway.app",
+    origin: "https://main--creative-palmier-c5bbaf.netlify.app",
     methods: ["GET", "POST"],
   },
   // pingTimeout: 60000, // Uncomment if needed
