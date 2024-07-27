@@ -24,7 +24,8 @@ app.post('/data', (req: Request, res: Response) => {
 
 // Initialize Socket.IO server
 const io = new Server(httpServer, {
-  // path: "/admin-panel",
+  path: "/admin-panel",
+   transports: ['websocket', 'polling'],
   cors: {
     origin: "socket-frontend-production.up.railway.app",
     methods: ["GET", "POST"],
