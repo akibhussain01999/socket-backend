@@ -25,7 +25,7 @@ app.post('/data', (req: Request, res: Response) => {
 // Initialize Socket.IO server
 const io = new Server(httpServer, {
   path: "/admin-panel",
-   transports: ['websocket', 'polling'],
+   // transports: ['websocket', 'polling'],
   cors: {
     origin: "https://main--creative-palmier-c5bbaf.netlify.app",
     methods: ["GET", "POST"],
